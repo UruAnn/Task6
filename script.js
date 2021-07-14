@@ -14,8 +14,6 @@ fetch('https://randomuser.me/api/?results=30')
     const profilePic = document.createElement('img');
     const profileName = document.createElement('h2');
     const contentSpan = document.createElement('span');
-    const contentSpan1 = document.createElement('span');
-    const contentSpan2 = document.createElement('span');
     const p1 = document.createElement('p');
     const p2 = document.createElement('p');
     const p3 = document.createElement('p');
@@ -24,13 +22,11 @@ fetch('https://randomuser.me/api/?results=30')
     mainC.appendChild(subC);
     subC.append(mainDiv, bodyF);
     bodyF.appendChild(bCard);
-
     mainDiv.appendChild(profilePic);
 
 
     mainC.classList.add("card", "mb-3");
     subC.classList.add("row", "g-0");
-    // divDiv.classList.add("col-md-2");
     mainDiv.classList.add("col-md-4");
     bodyF.classList.add("col-md-8");
     bCard.classList.add("card-body");
